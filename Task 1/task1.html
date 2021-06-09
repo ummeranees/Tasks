@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style1.css">
+  <title>Task 1</title>
+  
+</head>
+<body>
+
+  
+  
+    <div class="input">
+      <input type="text" placeholder="Enter the city" class="input_text" id="search_input">
+      <input type="submit" value="Search" class="submit">
+    </div>
+    <br>
+    <br>
+
+  
+
+
+  <div class="display">
+    <center>
+    <table border="1" cellpadding="10" cellspacing="10" heigth="30px">
+        <tr>
+            <th colspan="5" class="n">Place</th>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td>Pressure</td>
+            <td>Humidity</td>
+            <td>Visibility</td>
+            
+        </tr>
+        <tr>
+            <td class="Temperature"></td>
+            <td class="Pressure"></td>
+            <td class="Humidity"></td>
+            <td class="Visibility"></td>
+            
+        </tr>
+    </table>
+    </center>
+<script src="task1.js"></script>
+
+<!--script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script-->
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdrD0YI3iHqcrZp4_mQ_1CuUVJ7y1SUjc&libraries=places&callback=activatePlacesSearch">
+</script>
+<!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0OxlsNREd_x6HPtH1ep8MAgSg6uJNg5M&libraries=places"></script-->
+<!--script  src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script-->
+<!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script-->
+<!--script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=<AIzaSyA0OxlsNREd_x6HPtH1ep8MAgSg6uJNg5M>&sessiontoken=1234567890"></script-->
+<script>
+   function activatePlacesSearch(){
+       var input = document.getElementById('search_term');
+       var autocomplete = new google.maps.places.Autocomplete(input);
+
+   }
+</script>
+</body>
+</html>

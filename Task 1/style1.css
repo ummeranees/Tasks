@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.input{
+    margin: 20px;
+    background-color:white;
+    border-color: #428BCA;
+    padding-top: 20px;
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    border-radius: 5px 5px 5px 5px;
+    
+    
+}
+input[type="text"] {
+    width: 600px;
+    height: 50px;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #e9f1f1;
+    
+}
+input[type="submit"] {
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    background-color: #e8ebeb;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.display{
+    background-color:#cfdddd;
+    border-color: #42c5ca;
+    border: 1px solid #428BCA;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    border-radius: 5px 5px 5px 5px
+}
