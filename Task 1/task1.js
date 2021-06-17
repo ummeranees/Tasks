@@ -12,15 +12,17 @@ button.addEventListener('click', function(){
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=e15917f171999d15fdca6896910c59fc')
 .then(response => response.json())
 .then(data => {
-  var TemperatureValue = data[''];
-  var PressureValue = data[''];
-  var HumidityValue = data[''];
-  var VisibilityValue=data[''];
+  var N=data['name'];
+  var TemperatureValue = data['main']['temp'];
+  var PressureValue = data['main']['pressure'];
+  var HumidityValue = data['main']['humidity'];
+  var VisibilityValue=data['visibility'];
 
   Temperature.innerHTML=TemperatureValue;
   Pressure.innerHTML=PressureValue;
   Humidity.innerHTML=HumidityValue;
   Visibility.innerHTML=VisibilityValue;
+  
 
  
 })

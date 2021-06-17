@@ -1,5 +1,5 @@
 
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -28,6 +28,7 @@
     <table border="1" cellpadding="10" cellspacing="10" heigth="30px">
         <tr>
             <th colspan="5" class="n">Place</th>
+            <th class="pl" ></th>
         </tr>
         <tr>
             <td>Temperature</td>
@@ -48,19 +49,25 @@
 <script src="task1.js"></script>
 
 <!--script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script-->
-<script async
+<!--script async
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdrD0YI3iHqcrZp4_mQ_1CuUVJ7y1SUjc&libraries=places&callback=activatePlacesSearch">
 </script>
 <!--script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0OxlsNREd_x6HPtH1ep8MAgSg6uJNg5M&libraries=places"></script-->
 <!--script  src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script-->
 <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script-->
 <!--script src="https://maps.googleapis.com/maps/api/place/autocomplete/json?input=1600+Amphitheatre&key=<AIzaSyA0OxlsNREd_x6HPtH1ep8MAgSg6uJNg5M>&sessiontoken=1234567890"></script-->
-<script>
+<!--script>
    function activatePlacesSearch(){
        var input = document.getElementById('search_term');
        var autocomplete = new google.maps.places.Autocomplete(input);
 
    }
-</script>
+</script-->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9goAyQdvtbbddRIe5wDxQs1_bcg_sEFE&libraries=places"></script>
+<script>
+    var input = document.getElementById('search_input');
+    var autocomplete = new google.maps.places.Autocomplete(input);
+  </script>
+
 </body>
 </html>
